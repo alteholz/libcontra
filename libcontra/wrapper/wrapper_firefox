@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+export LD_PRELOAD=/home/thorsten/git-extern.xen/libcontra/libcontra/library/libcontra.so
+
+firefox
+

@@ -1,2 +1,3 @@
 # libcontra
-Libraryfor CONnection TRAcking
+LIBrary for CONnection TRAcking
+

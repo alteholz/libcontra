@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+export LD_PRELOAD=/home/thorsten/git-extern.xen/libcontra/libcontra/library/libcontra.so
+
+telnet <<EOF
+open www.web.de 80
+close
+EOF
+

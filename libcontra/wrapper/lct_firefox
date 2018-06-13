@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+if [ -z $CONTRA_LIBRARY ]; then
+  export CONTRA_LIBRARY=/usr/lib/$HOSTTYPE/libcontra.so
+fi
+ 
+export LD_PRELOAD=$CONTRA_LIBRARY
+
+firefox
+

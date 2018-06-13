@@ -18,6 +18,10 @@
 #  distribution); if not, write to the Free Software Foundation, Inc.,
 #  59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #
+if ( ${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR} )
+    message( FATAL_ERROR "In-source builds not allowed. Please make a new directory (called a build directory) and run CMake from there. You may need to remove CMakeCache.txt." )
+endif()
+
 CMAKE_MINIMUM_REQUIRED (VERSION 3.7)
 PROJECT(libcontra)
 

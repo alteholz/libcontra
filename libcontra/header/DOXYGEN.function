@@ -1,0 +1,22 @@
+/*!
+*************************************************************************
+*
+* \fn <name of function>
+*
+* \author Thorsten Alteholz <libcontra@alteholz.eu>
+*
+* \todo <what has to be done>
+*
+* \bug <known bugs>
+*
+* \brief <brief description>
+*
+* <detailed description>
+*
+* \param[IN] c a character
+* \param[OUT] n an interger
+* \param[IN,OUT] io input output
+* \return <what>
+************************************************************************/
+
+

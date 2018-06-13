@@ -1,0 +1,14 @@
+#!/bin/dash
+
+
+if [ -z $CONTRA_LIBRARY ]; then
+  export CONTRA_LIBRARY=/usr/lib/$HOSTTYPE/libcontra.so
+fi
+
+export LD_PRELOAD=$CONTRA_LIBRARY
+
+telnet <<EOF
+open www.web.de 80
+close
+EOF
+

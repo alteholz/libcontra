@@ -25,6 +25,21 @@ endif()
 CMAKE_MINIMUM_REQUIRED (VERSION 3.7)
 PROJECT(libcontra)
 
+SET(LATEX_OUTPUT_PATH build)
+INCLUDE(docu/UseLATEX.cmake)
+
+file(GLOB_RECURSE contents_files RELATIVE ${CMAKE_SOURCE_DIR} docu/*.tex)
+
+ADD_LATEX_DOCUMENT(
+    docu/handbook.tex
+    INPUTS ${contents_files}
+    IMAGE_DIRS docu/images
+#    BIBFILES bibliography.bib
+#    USE_INDEX
+#    USE_GLOSSARY
+#    FILTER_OUTPUT
+    )
+
 SET(libcontra_VERSION_MAJOR 0)
 SET(libcontra_VERSION_MINOR 1)
 
